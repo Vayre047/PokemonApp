@@ -7,9 +7,9 @@ function CardList(props){
         <div className="card-component">
             {pokemons.map((pokemon, key) => {
                 return(
-                    <div>
+                    <div className='card'>
                         <h1 className='pokemon-name'>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</h1>
-                        <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${key + 1}.png`} alt="" />
+                        <img className='card-image' src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${key + 1}.png`} alt="" />
                     </div>                    
                 )
             })}

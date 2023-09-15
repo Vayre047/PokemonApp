@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Pokemon API</h1>
+      <h1 className='title'>Pokemon API</h1>
       <SearchInput valueFiltered={searchHandler} placeholder="Search a Pokemon" />
       <CardList pokemons={pokemonsFiltered} />
     </div>
