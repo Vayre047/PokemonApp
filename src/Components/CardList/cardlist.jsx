@@ -2,15 +2,14 @@ import './cardlist.css';
 
 function CardList(props){
     const { pokemons } = props;
-    const pokemonImg = "";
 
     return(
         <div className="card-component">
-            {pokemons.map((pokemon) => {
+            {pokemons.map((pokemon, key) => {
                 return(
                     <div>
                         <h1 className='pokemon-name'>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</h1>
-                        <img src={`https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/3.svg`} alt="" />
+                        <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${key + 1}.png`} alt="" />
                     </div>                    
                 )
             })}
