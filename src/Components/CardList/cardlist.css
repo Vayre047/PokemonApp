@@ -1,0 +1,11 @@
+.card-component{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pokemon-name{
+    text-align: center;
+}

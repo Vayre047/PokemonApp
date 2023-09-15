@@ -13,14 +13,13 @@ function App() {
       .then(pokemon => setPokemons(pokemon.results));
   });
 
-
   function searchHandler(event){
-    let searchFieldValue = event.target.value.toLocaleLowerCase();
+    let searchFieldValue = event.target.value.toLowerCase();
     setSearchValue(searchFieldValue);
   }
 
   const pokemonsFiltered = pokemons.filter((pokemon) =>{
-    return pokemon.name.toLocaleUpperCase().includes(searchValue);
+    return pokemon.name.toLowerCase().includes(searchValue.toLowerCase());
   });
 
   return (
